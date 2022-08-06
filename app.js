@@ -11,9 +11,10 @@ document.getElementById(`h1_page`).addEventListener(`click`, rotate_this);
 function rotate_this() {
     document.getElementById(`h1_page`)[`style`][`transform`] = "rotateX(100deg)";
 }
-
+// event listener for the body of page
 document.body.addEventListener(`keydown`, pressed_something);
 
+// upon pressing space,a,b,c, page will be cleared and display that key is pressed. event.key identifies the actual key being on the way down.
 function pressed_something() {
     
     if(event.key === `a`) {
